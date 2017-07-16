@@ -1,117 +1,126 @@
-#search {
-    float: right;
-    padding: 12px;
-    color: white;
-    background: #35424a;
-}
-header a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: green;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
 }
 
-
-header h1 {
-    font-size: 35px;
-    color: green;
-    padding-left: 110px;
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    Fixed = parallax
+    scroll = normal
+    */
+    background-attachment: fixed;
 }
 
-#welcome {
-  font-size: 35px;
-    color: white;
-    padding-left: 110px;
+.pimg1 {
+    background-image: url(img/aditya_sunglasses.jpg);
+    min-height: 100%;
 }
 
-header p {
-    color: yellow;
-    font-family: cursive;
-    font-size: 20px;
-    padding: 20px;
-    width: 430px;
-    background-color: black
+.pimg2 {
+    background-image: url(img/image2.jpg);
+    min-height: 400px;
 }
 
-#paddy {
-    font-family: sans-serif;
-    font-size: 30px;
-    padding: 50px;
-    float: center;
+.pimg3 {
+    background-image: url(img/image3.jpeg);
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url(img/image4.jpeg);
+    min-height: 400px;
+}
+
+.section {
     text-align: center;
-    height: 100px;
-    color: white
+    padding: 50px 80px
 }
 
-#paddyp {
-    font-family: cursive;
-    text-decoration: none;
-    padding:20px;
-    font-size: 25px;
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
     text-align: center;
-    color: rgba(0, 0, 0, 0.72);
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase
 }
 
-nav li {
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+.ptext .border.dark {
+    background-color: transparent;
+    color: #000;
+}
+
+.social {
     display: inline-block;
-    padding: 10px 20px;
-    float: right;
-    font-family: fantasy;
-    font-size: 20px;
-    background-color: #35424a;
-}
-
-#heading1 {
-    color: blue;
-    font-family: sans-serif;
-    font-size: 30px;
-}
-
-section p {
-    text-decoration: underline;
-    font-family: monospace;
-    font-size: 20px;
-}
-
-.link {
-    font-family: monospace;
-    font-size: 30px;
-}
-
-#laptop {
-    height: 200px;
-    width: 300px;
-    padding-bottom:
-}
-
-#phone {
-    width: 200px;
-    height: 200px;
-}
-
-#ios {
-    width: 300px;
-    height: 250px;
-}
-
-#computer {
-    width: 200px;
-}
-
-#devices {
-    display: inline-block;
-}
-
-#caption {
     text-align: center;
-    font-weight: bold;
-    padding: 20px;
-    background: #514567;
-    color: yellow
+    width: 200px;
+    height: 45px;
 }
 
+#header-linkedin {
+    margin-left: -40px;
+    text-align: left;
+}
+
+#header-twitter {
+    margin-left: 0px;
+    text-align: left
+}
+
+#header-googleplus {
+    margin-left: 60px;
+    text-align: left;
+}
+
+
+#linkedin {
+    margin: 0px 50px 0px -150px;
+    width: 100px;
+}
+
+#twitter {
+    margin: 0px 50px 0px -50px;
+    width: 100px
+}
+
+#googleplus {
+    margin: 0px 50px 0px 50px;
+    width: 100px;
+}
+
+/*Footer*/
 footer {
     padding: 20px;
     background-color: #367391;
@@ -120,122 +129,15 @@ footer {
     margin-top: 100px;
 }
 
-#info {
-    text-align: center;
-    color: greenyellow;
-    padding-top: 40px;
+#hobby_list {
+    text-align: left;
 }
 
-.info_link {
-    text-align: center;
-    text-decoration: none;
-    padding-left: 900px;
-    color: aliceblue
+@media (max-width: 568px;){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
 }
+p {
 
-/*Contact Us*/
-
-#main {
-    background: #35424a;
-    padding: 10px;
-    padding-bottom: 2px;
-    color: white;
-    font-size: 25px;
 }
-
-#contact {
-    width: 250px;
-    color: white;
-}
-
-#message {
-    padding-top: 90px;
-    background: black;
-    color: yellow;
-    float: right;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-#call {
-    text-align: center;
-    background: black;
-    color: white;
-    margin-left: 2000px;
-    margin-top: 50px;
-    width: 200px;
-    float: right;
-}
-
-.social {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-    background: cadetblue;
-    padding: 20px;
-}
-
-#join {
-    font-size: 30px;
-    font-family: cursive;
-    text-align: center;
-    background: navy;
-    color: yellow;
-    padding: 20px;
-    margin: 100px;
-}
-
-#find {
-    text-align: center;
-    background: aqua;
-    padding: 30px;
-    margin: 100px;
-}
-
-#find_h {
-    background: black;
-    color: yellow;
-    font-family: monospace;
-    font-size: 50px;
-}
-
-/*About Me*/
-
-#title {
-    background: #35424a;
-    color: white;
-    background: #35424a;
-    padding: 10px;
-    padding-bottom: 40px;
-    color: white;
-    font-family: serif;
-}
-
-#me {
-    font-family: cursive;
-    text-decoration: none;
-    float: left;
-    width: 65%;
-    padding-bottom: 60px;
-}
-
-
-#list {
-    float: left;
-    background: #35424a;
-    color: white;
-    width: 65%;
-    padding-top: 10px;
-}
-
-#summer {
-    float: right;
-    background: #35424a;
-    color: white;
-    padding: 20px;
-}
-
-#footer_div {
-    padding-top: 500px;
-}
-
